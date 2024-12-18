@@ -5,12 +5,17 @@
     padding: 0;
     font-family:'Roboto', sans-serif;
     font-weight: 500;
-    color: #ebe1e1;
+    color: #ffff;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .before-navbar{
+    display: block;
     background: #fffbfbf6;
+    position: fixed;
+    width: 100%; 
+    z-index: 10;
 }
 
 .before-navbar p{
@@ -28,35 +33,50 @@
 .home-page{
     background: url(./images/Homepage-APR-Promo-Hero-Desktop-v3.png);
     width: 100%;
-    height: 100%; 
-    position: absolute;
+    height: 100vh;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 70px 20px;
+}
+
+.navbar img{
+    cursor: pointer;
 }
 
 .nav-items ul{
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
-    gap: 27px;
+    gap: 10px;
 
 }
 
 .nav-items ul li{
     font-size: 15px;
     font-weight: 600;
+    padding: 3px 14px;
     cursor: pointer;
 }
 
+.nav-items ul li:hover{
+    box-shadow: inset 0px 0px 20px 1px hsl(213.18deg 45.79% 29.61%);
+}
+
 .profile img{
-    padding-left: 10px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.profile img:hover{
+    box-shadow: inset 0px 0px 20px 1px hsl(213, 43%, 27%);
 }
 
 .home-heading{
@@ -64,7 +84,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 55px;
     font-weight: 600;
-    margin-top: 20px;
+    
 }
 
 .home-buttons{
@@ -78,15 +98,60 @@
     margin: 10px;
     padding:10px 90px;
     border-radius: 5px;
+    background: #fffbfbf6;
     cursor: pointer;
 }
 
 .model.y{
     background: url(./images/Homepage-Model-Y-Desktop-US-v2.png);
+    background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    align-items: center;
 }
 
-.model h2{
-    color: black;
+.model.headings{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px;
+}
+
+.model.headings .main{
+    font-size: 60px;
+    margin-bottom: -13px;
+}
+
+.model.headings .middle{
+    font-size: 35px;
+    box-shadow: inset 0px -1px 0px 0px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.model.headings .middle:hover{
+    box-shadow: inset 0px -2px 0px 0px;
+}
+
+.model.headings .bottom{
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.model-buttons button{
+    color: rgb(34, 33, 33);
+    border: none;
+    margin: 0px 0px 20px 10px;
+    padding:10px 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.model-buttons .order{
+    background-color: #3e6ae1;
+    color: #fffbfbf6;
 }
