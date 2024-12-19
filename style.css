@@ -150,7 +150,7 @@
 .model-buttons .buttons{
     color: rgb(34, 33, 33);
     border: none;
-    margin: 0px 0px 100px 10px;
+    margin: 0px 0px 40px 10px;
     padding:10px 90px;
     border-radius: 5px;
     cursor: pointer;
@@ -159,6 +159,10 @@
 .model-buttons .order{
     background-color: #3e6ae1;
     color: #fffbfbf6;
+}
+
+.model-buttons .buttons:active{
+    box-shadow: inset 0px 0px 0px 2px;
 }
 
 .model.three{
@@ -264,10 +268,74 @@
 .model-buttons.cyber .learn.cyber{
     background: #19141af2;
     border: .5px solid #392d3b;
-    margin: 0px 0px 100px 10px;
+    margin: 0px 0px 40px 10px;
     padding:10px 90px;
     cursor: pointer;
     text-transform: uppercase;
     color: #aaaaaa;
     font-size: 14px;
+}
+
+.model-buttons.cyber .order.cyber:hover{
+    background: #1d161ff2;
+}
+
+.model-buttons.cyber .learn.cyber:hover{
+    background: #1d161ff2;
+}
+
+.solar-panel{
+    background: url(./images/Homepage-SolarPanels-01-Desktop.avif);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.solar-roof{
+    background: url(./images/Homepage-SolarRoof-Desktop-US.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.model.headings .middle.roof{
+    box-shadow: 0 0 0 0;
+}
+
+.power-wall{
+    background: url(./images/Homepage-Powerwall-Desktop-US.png);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.accessories{
+    background: url(./images/Homepage-Accessories-Desktop-US.avif);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    align-items: center;
 }
